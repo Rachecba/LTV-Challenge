@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="js/jquery.ajax-cross-origin.min.js"
+    ></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <title>Landing</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="row blue">
+        <nav class="nav center-web">
+          <div class="col-6">
+            <div class="logo">
+              <img src="assets/PNGs/Logo@2x.png" />
+            </div>
+          </div>
+          <div class="col-6">
+            <span class="person-icon">
+              <img src="assets/PNGs/icn_person@2x.png" />
+            </span>
+            <span class="search-icon">
+              <img src="assets/PNGs/icn_search@2x.png" />
+            </span>
+          </div>
+        </nav>
+      </div>
+      <div class="row blue index">
+        <div class="center-web search-div">
+          <div class="row justify-content-center">
+            <h1 class="search-h1 text-center">Search Any Email Address</h1>
+          </div>
+          <div class="row justify-content-center">
+            <p class="p-startHere text-center">
+              <span>Start Here</span> - Look up the owner's name, photos and
+              online profiles. See what you find!
+            </p>
+          </div>
+          <div class="row desktop search-email-div">
+            <div class="col-10">
+              <div class="emailContainer">
+                <input type="email" class="email-input" id="email-desktop" />
+                <label for="email-desktop" class="label">EMAIL</label>
+              </div>
+            </div>
+            <div class="col-2">
+              <button class="btn go-btn">GO!</button>
+            </div>
+          </div>
+          <!-- mobile -->
+          <div class="mobile search-email-div">
+            <div class="row input">
+              <div class="emailContainer">
+                <input type="email" class="email-input" id="email-mobile" />
+                <label for="email-mobile" class="label">EMAIL</label>
+              </div>
+            </div>
+            <div class="row">
+              <button class="btn go-btn">GO!</button>
+            </div>
+          </div>
+          <!-- mobile -->
+          <div class="row small-div">
+            <span class="lock-icon">
+              <img src="assets/PNGs/lock@2x.png" />
+            </span>
+            <p class="small-p">
+              Enter Any Email Address. They won't be notified.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row white results">
+        <div class="center-web">
+          <div class="row justify-content-center">
+            <h1 class="result-h1 text-center">Result</h1>
+          </div>
+          <div class="row justify-content-center">
+            <p class="result-p">
+              Look at the result below to see the details of the person you’re
+              searched for.
+            </p>
+          </div>
+          <div class="row justify-content-center">
+            <div class="person-card desktop row">
+              <div class="col-2">
+                <div class="circle">
+                  <div><img src="assets/PNGs/icn_person@2x.png" /></div>
+                </div>
+              </div>
+              <div class="card-info col-10">
+                <div class="name">
+                  <h1>John Smith, 35</h1>
+                  <p></p>
+                </div>
+                <div class="person-info">
+                  <div class="row address-phone">
+                    <div class="address col-6">
+                      <h2>Address</h2>
+                      <p></p>
+                    </div>
+                    <div class="phone col-6">
+                      <h2>Phone Numbers</h2>
+                    </div>
+                  </div>
+                  <div class="row email-relatives">
+                    <div class="email col-6">
+                      <h2>Email</h2>
+                      <p></p>
+                    </div>
+                    <div class="relatives col-6">
+                      <h2>Relatives</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- mobile -->
+            <div class="person-card mobile">
+              <div class="name">
+                <h1>John Smith, 35</h1>
+                <p></p>
+              </div>
+              <div class="address">
+                <h2>Address</h2>
+                <p></p>
+              </div>
+              <div class="phone">
+                <h2>Phone Numbers</h2>
+              </div>
+              <div class="email">
+                <h2>Email</h2>
+                <p></p>
+              </div>
+              <div class="relatives">
+                <h2>Relatives</h2>
+              </div>
+            </div>
+            <!-- mobile -->
+          </div>
+        </div>
+      </div>
+
+      <div class="row white index">
+        <div class="center-web">
+          <div class="row justify-content-center">
+            <h1 class="email-h1 text-center">Reverse Email Lookup</h1>
+          </div>
+          <div class="row justify-content-start">
+            <p class="lorem-p">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+        <div class="circles-div center-circles">
+          <section>
+            <div class="row desktop">
+              <article class="article col-6">
+                <div class="circle">1</div>
+                <div class="circle-side">
+                  <h2>Lorem Ipsum</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </article>
+              <article class="article col-6 circles-right">
+                <div class="circle">2</div>
+                <div class="circle-side">
+                  <h2>Lorem Ipsum</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="row desktop">
+              <article class="article col-6">
+                <div class="circle">3</div>
+                <div class="circle-side">
+                  <h2>Lorem Ipsum</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </article>
+              <article class="article col-6 circles-right">
+                <div class="circle">4</div>
+                <div class="circle-side">
+                  <h2>Lorem Ipsum</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="row desktop">
+              <article class="article col-6">
+                <div class="circle">5</div>
+                <div class="circle-side">
+                  <h2>Lorem Ipsum</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </article>
+              <article class="article col-6 circles-right">
+                <div class="circle">6</div>
+                <div class="circle-side">
+                  <h2>Lorem Ipsum</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <!-- mobile -->
+            <div class="mobile">
+              <article class="article row">
+                <div class="circle">1</div>
+                <div class="circle-side">
+                  <h2>Lorem Ipsum</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </article>
+              <article class="article row circles-right">
+                <div class="circle">2</div>
+                <div class="circle-side">
+                  <h2>Lorem Ipsum</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </article>
+              <article class="article row">
+                <div class="circle">3</div>
+                <div class="circle-side">
+                  <h2>Lorem Ipsum</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </article>
+              <article class="article row circles-right">
+                <div class="circle">4</div>
+                <div class="circle-side">
+                  <h2>Lorem Ipsum</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </article>
+              <article class="article row">
+                <div class="circle">5</div>
+                <div class="circle-side">
+                  <h2>Lorem Ipsum</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </article>
+              <article class="article row circles-right">
+                <div class="circle">6</div>
+                <div class="circle-side">
+                  <h2>Lorem Ipsum</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <!-- mobile -->
+          </section>
+        </div>
+      </div>
+
+      <div class="row blue results">
+        <div class="center-web">
+          <div class="search-div">
+            <div class="row justify-content-center">
+              <h1 class="right-person-h1 text-center">
+                Can’t Find The Right Person?
+              </h1>
+            </div>
+            <div class="row justify-content-center">
+              <p class="p-startHere text-center">
+                <span>Try again</span> - Make a new search
+              </p>
+            </div>
+            <div class="row search-email-div desktop">
+              <div class="col-10">
+                <div class="emailContainer">
+                  <input type="email" class="email-input-results" id="email-results-desktop" />
+                  <label for="email-results-desktop" class="label">EMAIL</label>
+                </div>
+              </div>
+              <div class="col-2">
+                <button class="btn go-btn-results">GO!</button>
+              </div>
+            </div>
+            <!-- mobile -->
+            <div class="search-email-div mobile">
+              <div class="row">
+                <div class="emailContainer">
+                  <input type="email" class="email-input-results" id="email-results-mobile" />
+                  <label for="email-results-mobile" class="label">EMAIL</label>
+                </div>
+              </div>
+              <div class="row">
+                <button class="btn go-btn-results">GO!</button>
+              </div>
+            </div>
+            <!-- mobile -->
+            <div class="row small-div">
+              <span class="lock-icon">
+                <img src="assets/PNGs/lock@2x.png" />
+              </span>
+              <p class="small-p">
+                Enter Any Email Address. They won't be notified.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="row desktop">
+          <div class="col-9 lorem-footer">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="col-3 privacy-footer">
+            <p>Terms | Privacy</p>
+          </div>
+        </div>
+        <!-- mobile -->
+        <div class="row mobile lorem-footer justify-content-center">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="row mobile privacy-footer justify-content-center">
+          <p>Terms | Privacy</p>
+        </div>
+        <!-- mobile -->
+      </footer>
+    </main>
+  </body>
+</html>
